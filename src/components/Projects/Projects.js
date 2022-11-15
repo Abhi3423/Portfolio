@@ -69,7 +69,6 @@ function Projects() {
               title="LEVITATION"
               description="Project made in a hackathon organized by IIT BOMBAY. It provides a platform where user can book there travelling or waiting tickets for hyperloops pods and it have such a developed time management that a user never have to wait more than 5 minutes."
               ghLink="https://github.com/Abhi3423/Levitation"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
@@ -80,7 +79,6 @@ function Projects() {
               title="Space Erudite Game"
               description="Project made in NASA SPACE CHALLENGE 2021. It is a basic text based javascript game developed over analyzing various space situations and environment categories of the planets in our solar system."
               ghLink="https://github.com/Abhi3423/SpaceEruditeGame"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
