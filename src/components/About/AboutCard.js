@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Abhishek Yadav </span>
             from <span className="purple"> Kanpur, UP, India.</span>
-            <br />I am a pursuing Btech in Computer Science and Engineering in SRM Institute of Science and Technology, Kattankulathur, Chennai.
+            <br />I am pursuing Btech in Computer Science and Engineering in SRM Institute of Science and Technology, Kattankulathur, Chennai.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
