@@ -72,7 +72,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:abhishekaug2002@gmail.com?"
+                  href="mailto:as2165@srmist.edu.in?"
                   subject="subject text"
                   target="_blank"
                   rel="noreferrer"
