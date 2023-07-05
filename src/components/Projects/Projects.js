@@ -8,6 +8,10 @@ import recruit from "../../Assets/Projects/recruit.jpg";
 import levitation from "../../Assets/Projects/levitation.jpg";
 import space from "../../Assets/Projects/space.jpg";
 import share from "../../Assets/Projects/share.jpg";
+import dice from "../../Assets/Projects/dice.png";
+import travel from "../../Assets/Projects/travel.png";
+import statistics from "../../Assets/Projects/statistics.png";
+import referral from "../../Assets/Projects/referral hub.png";
 
 function Projects() {
   return (
@@ -21,14 +25,64 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={referral}
+              isBlog={false}
+              demoLink='https://refferal-hub-seven.vercel.app/'
+              title="Referral Hub"
+              description="Referral Hub to reach out to right person for the job referrals."
+              ghLink="https://github.com/Abhi3423/Refferal_hub"
+
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={statistics}
+              isBlog={false}
+              demoLink='https://statistics-dashboard-delta.vercel.app/'
+              title="Statistics Dashboard"
+              description="This is a well responsive website which represents statistical data in different formats like in line chart, bar chart etc."
+              ghLink="https://github.com/Abhi3423/Statistics-Dashboard"
+
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={travel}
+              isBlog={false}
+              demoLink='https://travel-profile.vercel.app/'
+              title="Travel Profile"
+              description="Travel Profile of a respondent developed for IISC CISTUP development round."
+              ghLink="https://github.com/Abhi3423/Travel-Profile"
+
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dice}
+              isBlog={false}
+              demoLink='https://dice-game-theta.vercel.app/'
+              title="Game"
+              description="A simple game to roll the dice and earn more points early and win."
+              ghLink="https://github.com/Abhi3423/Dice-game"
+
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={recruit}
               isBlog={false}
+              demoLink='https://cn-recruitment.vercel.app/'
               title="Recruitment"
               description="A recruitment single page static website in ReactJs with lots of creative animations and almost responsive elements."
               ghLink="https://github.com/Abhi3423/CN_Webdev_Task"
-             
+
             />
           </Col>
 
@@ -48,7 +102,7 @@ function Projects() {
               isBlog={false}
               title="MEDINVOICE"
               description="Project made in a hackathon organized by DS Community. It is a platform which solves the problem of keeping old prescriptions. It starts to store all your health records at single place."
-              ghLink= "https://github.com/Abhi3423/Bit-Space-DSHack"            
+              ghLink="https://github.com/Abhi3423/Bit-Space-DSHack"
             />
           </Col>
 
