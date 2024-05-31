@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { BackendTechstack, FrontendTechstack, Databases } from "./Techstack";
 
 function About() {
   return (
@@ -35,10 +36,30 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Programming <strong className="purple">Languages </strong>
         </h1>
 
         <Techstack />
+
+        <h1 className="project-heading">
+          Backend <strong className="purple">Techstack </strong>
+        </h1>
+
+        <BackendTechstack />
+
+        <h1 className="project-heading">
+          Frontend <strong className="purple">Techstack </strong>
+        </h1>
+
+        <FrontendTechstack />
+
+
+        <h1 className="project-heading">
+          Databases
+        </h1>
+
+        <Databases />
+
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use

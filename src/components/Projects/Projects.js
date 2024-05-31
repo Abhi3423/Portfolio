@@ -12,6 +12,8 @@ import dice from "../../Assets/Projects/dice.png";
 import travel from "../../Assets/Projects/travel.png";
 import statistics from "../../Assets/Projects/statistics.png";
 import referral from "../../Assets/Projects/referral hub.png";
+import Beneath from "../../Assets/Projects/Beneath.jpeg";
+import Pinak from "../../Assets/Projects/Pinak.png"
 
 function Projects() {
   return (
@@ -28,13 +30,34 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Pinak}
+              isBlog={false}
+              title="PINAK"
+              description="Worked for BARC, Department of Atomic Energy, India for the validations and reduced error rate by 95%"
+              ghLink=""
+              appreciation="https://drive.google.com/file/d/154l-ZbNGaLKl_e4Ig9YmPaco-dxbr4M-/view?usp=sharing"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Beneath}
+              isBlog={false}
+              title="Beneath Protocol"
+              description="Developed a decentralized cross-chain communication protocol, bridging Web3 and Web2 across 5 major blockchain platforms."
+              ghLink="https://github.com/Beneath-Protocol/beneath-frontend"
+              demoLink="https://devfolio.co/projects/beneath-protocol-bf26"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={referral}
               isBlog={false}
               demoLink='https://refferal-hub-seven.vercel.app/'
               title="Referral Hub"
               description="Referral Hub to reach out to right person for the job referrals."
               ghLink="https://github.com/Abhi3423/Refferal_hub"
-
             />
           </Col>
 
