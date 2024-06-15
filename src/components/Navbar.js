@@ -29,6 +29,11 @@ function NavBar() {
     }
   }
 
+  function updatestates(){
+    updateExpanded(false);
+    setShowPopup(true);
+  }
+
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -88,7 +93,7 @@ function NavBar() {
               <Nav.Link
                 target="_blank"
                 className=""
-                onClick={() => setShowPopup(true)}
+                onClick={() => updatestates()}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
