@@ -12,12 +12,14 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import Popup from "./popup";
 
 // import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [showPopup, setShowPopup] = useState(false); 
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -30,6 +32,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    <>
     <Navbar
       expanded={expand}
       fixed="top"
@@ -83,9 +86,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://drive.google.com/file/d/1YJWNhK7m64eG_Kr4UB7owmuuMZ5YChKb/view?usp=sharing"
                 target="_blank"
                 className=""
+                onClick={() => setShowPopup(true)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
@@ -106,6 +109,8 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    {showPopup && <Popup onClose={() => setShowPopup(false)} />}
+   </>
   );
 }
 
